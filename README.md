@@ -1,14 +1,27 @@
-# Foobar
+# Bequant
 
 Foobar is a Python library for dealing with word pluralization.
 
 ## Installation
 
-Use the package manager [pip](https://pip.pypa.io/en/stable/) to install foobar.
+Run the following command
+```bash
+git clone https://github.com/joycezemitchell/bequant.git 
+```
+
+## Database Configuration
+Open configration.json and update the following
 
 ```bash
-pip install foobar
+{
+    "host":"xxxx",
+	"port":5432,
+	"user":"xxxx",
+	"password":"xxxx",
+	"dbname":"bequant"
+}
 ```
+
 
 ## Usage
 
