@@ -3,6 +3,13 @@ Service that collect data from cryptocompare.com using its API and stores it in 
 
 ## Installation
 
+Setup the database
+- Open PgAdmin
+- Create a new dabase called **bequant**
+- Import **bequant.sql**
+- Update config.json with your db credential
+
+
 Run the following command
 ```bash
 git clone https://github.com/joycezemitchell/bequant.git 
@@ -11,7 +18,7 @@ go build -o sychdata synch.go
 ```
 
 ## Database Configuration
-Open configration.json and update the
+Open configration.json and update the following with your credential
 
 ```bash
 {
