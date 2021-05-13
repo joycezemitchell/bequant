@@ -17,6 +17,34 @@ go build -o bequantserver server.go
 go build -o sychdata synch.go
 ```
 
+To test in local machine run the following commands in 2 separate terminals.
+
+For syching and grabbing data from cryptocompare.com, run the followung
+
+```bash
+go run synch.go
+```
+
+or
+
+```bash
+./sychdata
+```
+
+
+For running the server:
+```bash
+go run server.go
+```
+
+or
+```bash
+./bequantserver
+```
+
+You can go to http://localhost:16000 to test it in your local machine
+
+
 ## Database Configuration
 Open configration.json and update the following with your credential
 
