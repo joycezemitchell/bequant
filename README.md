@@ -1,12 +1,13 @@
 # Bequant
-
-Foobar is a Python library for dealing with word pluralization.
+Service that collect data from cryptocompare.com using its API and stores it in a database (PostgreSQL))
 
 ## Installation
 
 Run the following command
 ```bash
 git clone https://github.com/joycezemitchell/bequant.git 
+go build -o bequantserver server.go
+go build -o sychdata synch.go
 ```
 
 ## Database Configuration
@@ -24,19 +25,46 @@ Open configration.json and update the
 
 
 ## Usage
+At the moment it only supports 
+- BTC
+- LINK
+- USD
+- EUR
 
-```python
-import foobar
-
-foobar.pluralize('word') # returns 'words'
-foobar.pluralize('goose') # returns 'geese'
-foobar.singularize('phenomena') # returns 'phenomenon'
+Grab all BTC and LINK with USD and EUR currencies
+```sh
+http://bequant.allyapps.com/price?fsyms=BTC,LINK&tsyms=USD,EUR
+```
+Grab all BTC and LINK with USD currency only
+```sh
+http://bequant.allyapps.com/price?fsyms=BTC,LINK&tsyms=USD
+```
+Grab all BTC with EUR currencies
+```sh
+http://bequant.allyapps.com/price?fsyms=BTC&tsyms=EUR
 ```
 
-## Contributing
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+Grab all LINK with USD currency 
+```sh
+http://bequant.allyapps.com/price?fsyms=LINK&tsyms=USD
+```
 
-Please make sure to update tests as appropriate.
+## Grabbing new data from cryptocompare.com
+Running **synch.go** will get collect data from cryptocompare.com using its API and stores it
+in a database. This need to running in the background and run a daemon service 
 
-## License
-[MIT](https://choosealicense.com/licenses/mit/)
+At the moment I have stop this service as it will run every 2 minutes and will max out my test server database.
+Pleas le me know if you need me to start this service for demo
+
+Here is a screenshot of a the daemnon setup
+
+![alt q1DG1PY](https://ibb.co/q1DG1PY)
+![alt text](https://github.com/[username]/[reponame]/blob/[branch]/image.jpg?raw=true)
+
+## Database Structure
+
+
+
+
+
+
