@@ -61,7 +61,7 @@ Open configration.json and update the following with your credential
 
 
 ## Usage
-At the moment it only supports 
+For now it only supports 
 - BTC
 - LINK
 - USD
