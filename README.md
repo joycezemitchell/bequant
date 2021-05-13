@@ -94,8 +94,9 @@ Sample Postman output
 ## Grabbing new data from cryptocompare.com
 Running **synch.go** will get/collect data from cryptocompare.com using its API and stores it in a database. This need to be running in the background and run as a daemon service. 
 
-At the moment I have stop this service as it will run every 2 minutes and will max out my test server environment.
-Please let me know if you need me to start this service.
+As of the moment, the data in the dev environment are not updated (last time I  ran it was on May 13, around 2pm) as I have stop this service as it will run every 2 minutes and will max out my test server environment.
+
+Please let me know if you need me to start this service again so you can see the most updated data.
 
 Here is a screenshot of a the daemnon configuration
 
