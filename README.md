@@ -67,7 +67,7 @@ For now it only supports
 - USD
 - EUR
 
-I have set it up on my DigitalOcean dev environment  server so you run some test.
+I have set it up on my DigitalOcean dev environment  server so you can run some test.
 
 Grab all BTC and LINK with USD and EUR currencies
 ```sh
