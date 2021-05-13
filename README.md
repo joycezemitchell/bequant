@@ -10,15 +10,15 @@ git clone https://github.com/joycezemitchell/bequant.git
 ```
 
 ## Database Configuration
-Open configration.json and update the following
+Open configration.json and update the
 
 ```bash
 {
     "host":"xxxx",
-	"port":5432,
-	"user":"xxxx",
-	"password":"xxxx",
-	"dbname":"bequant"
+"port":5432,
+"user":"xxxx",
+"password":"xxxx",
+"dbname":"bequant"
 }
 ```
 
