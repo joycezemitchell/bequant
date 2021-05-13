@@ -76,6 +76,21 @@ Sample database content
 ![picture](images/displayc.PNG)
 
 
+# Server Sturcture
+Currently the **bequant** server is running as a daemon and it is behind a proxy server (nginx)
+Here is the following command to start the server:
+```bash
+{
+systemctl start bequantserver
+}
+```
+
+
+Here is the configuration of the server
+![picture](images/system.PNG)
+
+Here is the nginx configuration
+![picture](images/nginx.PNG)
 
 
 
