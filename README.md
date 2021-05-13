@@ -50,16 +50,13 @@ http://bequant.allyapps.com/price?fsyms=LINK&tsyms=USD
 ```
 
 ## Grabbing new data from cryptocompare.com
-Running **synch.go** will get collect data from cryptocompare.com using its API and stores it
-in a database. This need to running in the background and run a daemon service 
+Running **synch.go** will get/collect data from cryptocompare.com using its API and stores it in a database. This need to be running in the background and run as a daemon service. 
 
-At the moment I have stop this service as it will run every 2 minutes and will max out my test server database.
-Pleas le me know if you need me to start this service for demo
+At the moment I have stop this service as it will run every 2 minutes and will max out my test server environment.
+Please let me know if you need me to start this service.
 
-Here is a screenshot of a the daemnon setup
+Here is a screenshot of a the daemnon configuration
 
-![alt q1DG1PY](https://ibb.co/q1DG1PY)
-![alt text](https://github.com/[username]/[reponame]/blob/[branch]/image.jpg?raw=true)
 ![picture](images/im1.PNG)
 
 ## Database Structure
