@@ -9,7 +9,6 @@ Setup the database
 - Import **bequant.sql**
 - Update config.json with your db credential
 
-
 Run the following command
 ```bash
 git clone https://github.com/joycezemitchell/bequant.git 
@@ -17,9 +16,9 @@ go build -o bequantserver server.go
 go build -o sychdata synch.go
 ```
 
-To test it in your local machine, run the following commands in 2 separate terminals.
+To test it in your local machine, run the following commands in 2 separate terminals:
 
-For syching and grabbing data from cryptocompare.com, run the followung
+For syching and grabbing data from cryptocompare.com, run the following:
 
 ```bash
 go run synch.go
@@ -33,11 +32,13 @@ or
 
 
 For running the server:
+
 ```bash
 go run server.go
 ```
 
 or
+
 ```bash
 ./bequantserver
 ```
