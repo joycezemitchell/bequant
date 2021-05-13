@@ -67,6 +67,8 @@ At the moment it only supports
 - USD
 - EUR
 
+I have set it up on my DigitalOcean dev environment  server so you run some test.
+
 Grab all BTC and LINK with USD and EUR currencies
 ```sh
 http://bequant.allyapps.com/price?fsyms=BTC,LINK&tsyms=USD,EUR
