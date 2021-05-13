@@ -49,6 +49,10 @@ Grab all LINK with USD currency
 http://bequant.allyapps.com/price?fsyms=LINK&tsyms=USD
 ```
 
+Sample Postman output
+
+![picture](images/postman.PNG)
+
 ## Grabbing new data from cryptocompare.com
 Running **synch.go** will get/collect data from cryptocompare.com using its API and stores it in a database. This need to be running in the background and run as a daemon service. 
 
@@ -64,6 +68,12 @@ I used **PostgreSql** as a backend database and created 2 tables called **raw** 
 
 ![picture](images/raw.PNG)
 ![picture](images/display.PNG)
+
+
+Sample database content
+
+![picture](images/rawc.PNG)
+![picture](images/displayc.PNG)
 
 
 
