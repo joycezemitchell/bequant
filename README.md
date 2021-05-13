@@ -60,8 +60,13 @@ Here is a screenshot of a the daemnon setup
 
 ![alt q1DG1PY](https://ibb.co/q1DG1PY)
 ![alt text](https://github.com/[username]/[reponame]/blob/[branch]/image.jpg?raw=true)
+![picture](images/im1.PNG)
 
 ## Database Structure
+I used **PostgreSql** as a backend database and created 2 tables called **raw** and **display**
+
+![picture](images/raw.PNG)
+![picture](images/display.PNG)
 
 
 
