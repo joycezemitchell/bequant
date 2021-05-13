@@ -1,0 +1,7 @@
+{
+    "host":"xxxx",
+	"port":5432,
+	"user":"xxxx",
+	"password":"xxxx",
+	"dbname":"bequant"
+}
