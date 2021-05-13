@@ -99,6 +99,7 @@ Please let me know if you need me to start this service.
 
 Here is a screenshot of a the daemnon configuration
 
+
 ![picture](images/im1.PNG)
 
 ## Database Structure
