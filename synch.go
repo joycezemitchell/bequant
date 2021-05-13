@@ -13,10 +13,23 @@ import (
 )
 
 func main(){
-
+	
 	// Connect to database
 	db.Init()
+	
+	// Run every 2 min
+	cronJob(120000*time.Millisecond, runSych)
 
+
+}
+func cronJob(d time.Duration, f func(time.Time)) {
+	for x := range time.Tick(d) {
+		f(x)
+	}
+}
+
+func runSych(t time.Time) {
+	fmt.Printf("%v: Synching data!\n", t)
 	// Parse Data
 	data := parseData("https://min-api.cryptocompare.com/data/pricemultifull?fsyms=BTC,LINK&tsyms=USD,EUR")
 	fmt.Println(data.Raw.BTC.USD.CHANGE24HOUR)
@@ -37,7 +50,6 @@ func main(){
 	pg.AddDisplayLinkEurPrice(data)
 
 }
-
 func parseData(url string) model.Data {
 	var data model.Data
 
