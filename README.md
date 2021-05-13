@@ -105,7 +105,7 @@ Here is a screenshot of a the daemnon configuration
 ## Database Structure
 I used **PostgreSql** as a backend database and created 2 tables called **raw** and **display**
 
-(Please check **bequant.sql** from complete db structure)
+(Please check **bequant.sql** for complete db structure)
 
 ![picture](images/raw.PNG)
 ![picture](images/display.PNG)
